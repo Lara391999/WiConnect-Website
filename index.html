@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WIConnect – Demokratie im Alltag</title>
+
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/ldx7ntv.css">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+
+
+</head>
+<body>
+  <!-- Navigation -->
+
+<nav class="navbar">
+  <div class="nav-content">
+    <!-- statt Text hier ein Bild: -->
+    <div class="nav-logo">
+      <a href="/">
+        <img src="assets/logo.png" alt="WIConnect Logo">
+      </a>
+    </div>    <div class="burger" id="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#bisherigestationen">Bisherige Abstimmungen</a></li>
+      <li><a href="#Ballomat">So funktioniert's</a></li>
+      <li><a href="#partner">Partner</a></li>
+      <li><a href="#team1">Team</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- Hero-Bereich -->
+<header class="hero-header">
+  <div class="hero-part part1"></div>
+  <div class="hero-part part2"></div>
+  <div class="hero-part part3"></div>
+
+   <div class="hero-circle circle1"></div>
+  <div class="hero-circle circle2"></div>
+  <div class="hero-circle circle3"></div>
+
+
+  <div class="hero-text" id="hero-text">
+    <h1 id="Headline">Deine Meinung <br>bringt was ins Rollen</>
+  </div>
+</header>
+
+
+
+<section id="waswärewenn" class="two-col">
+  <div class="text column">
+ 
+  </div>
+  <div class="text column">
+
+    <h2>Mitbestimmen mit WiConnect </h2>
+       <p> 
+Mit unserem Ballomat ziehen wir durch Wiesbaden und bereiten gemeinsam mit unseren Partnern Abstimmungen vor, 
+deren Ergebnisse auch wirklich zeitnah umgesetzt werden. <br> 
+Ob es die Angebotswahl beim Bäcker ist oder die nächste Familienaktion im Kino: Demokratie soll nicht nur alle paar Jahre stattfinden, sondern immer spürbar sein.
+<br> <br>
+Dabei können wir vielleicht nicht ganz Wiesbaden umkrempeln, aber mit kleinen Veränderungen dafür sorgen, 
+dass deine Meinung sich im alltäglichen Leben widerspiegelt. 
+<br> 
+
+
+
+       </p>
+
+  </div>
+</section>
+
+
+<section id="Ballomat" class="two-col">
+   <div class="media">
+    <img src="assets/Ballomat.png " alt="Beschreibung">
+  </div>
+ 
+  <div class="text column">
+    <h2>So geht's: <br>Ball nehmen. Einwerfen. Mitbestimmen.</h2>
+    <p> 
+      1. Die Frage passt immer zum entsprechenden Standort. <br> <br> 
+      2. Unter der Frage findest du die passenden Auswahlmöglichkeiten. <br> <br>
+      3. Im unteren Teil des Ballomaten kannst du dir einen Ball nehmen. <br> <br>
+      4. Den Ball wirfst du in die passende Öffnung. Den aktuellen Füllstand kannst du jederzeit einsehen. <br> <br>
+      5. Nach der Abstimmung wird das Ergebnis ausgewertet und zeitnah umgesetzt. 
+
+    </p>
+  </div>
+
+
+</section>
+
+
+
+
+
+<section id="bisherigestationen" class="two-col">
+
+
+
+<div class="text column">
+    <h2>Bisherige Abstimmungen: <br> 
+      LUSH x WiConnect</h2>
+   <p>
+      Unsere erste Abstimmung haben wir gemeinsam mit dem LUSH Wiesbaden durchgeführt und waren am 12.07.2025 für die Abstimmung vor Ort. 
+      <br> Für die Umsetzung wurde eine Live-Aktion in der darauffolgenden Woche geplant, bei der die Kunden eine eigene Badebombe herstellen konnten.
+      <br> Die meisten Stimmen sammelte die „Badebombe Intergalactic“, die die Kunden gemeinsam mit dem Lush-Team am 19.07.2025 herstellten.
+
+  </p>
+  </div>
+    <div class="media">
+    <img src="assets/Intergalactic Badebombe.jpg" alt="Beschreibung">
+
+  </div>
+</section>
+
+
+
+  <!-- Partner (mit Karte) -->
+  <section id="partner">
+
+  <div class="hero-circle circle1"></div>
+  <div class="hero-circle circle2"></div>
+  <div class="hero-circle circle3"></div>
+  
+    <h2>Unsere Partner</h2>
+    <p>Klicke auf die Karte, um unsere Kooperationspartner <br> und deren Standorte zu sehen.</p>
+
+
+    <div id="map"></div>
+  </section>
+
+
+
+
+  <section id="team1" class="two-col">
+  <div class="text column">
+    <h2>Das WiConnect-Team</h2>
+
+    <p id="Teambeschreibung">
+      Wir sind ein Team aus Studierenden der Hochschule RheinMain. Im Rahmen unseres Studiengangs Media Management betreuen wir das Projekt „WiConnect“. <br>
+Wir hoffen, dass wir es mit euch als festen Bestandteil in Wiesbaden verankern können.
+    </p>
+  
+  </div>
+  <div id="Gruppenbild" class="media">
+    <img src="assets/Gruppenbild.jpg" alt="Beschreibung">
+  </div>
+</section>
+
+
+<section id="team2" class="team-grid">
+
+
+  <div class="team-grid__container">
+    <div class="team-grid__member">
+      <img src="assets/John.jpg" alt="John" />
+      <p class="team-grid__name">John</p>
+      <p class="team-grid__role">Stationsdesign, -bau</p>
+    </div>
+    <div class="team-grid__member">
+      <img src="assets/Daniel.jpg" alt="Daniel" />
+      <p class="team-grid__name">Daniel</p>
+      <p class="team-grid__role">Sponsoren-, Partnerakquise</p>
+    </div>
+    <div class="team-grid__member">
+      <img src="assets/Fritz.jpg" alt="Fritz" />
+      <p class="team-grid__name">Fritz</p>
+      <p class="team-grid__role">Stationsdesign, -bau</p>
+    </div>
+    <div class="team-grid__member">
+      <img src="assets/Felix.jpg" alt="Felix" />
+      <p class="team-grid__name">Felix</p>
+      <p class="team-grid__role">Social Media, Videographie</p>
+    </div>
+    <div class="team-grid__member">
+      <img src="assets/Lara L.jpg" alt="Lara L." />
+      <p class="team-grid__name">Lara L.</p>
+      <p class="team-grid__role">Design, Print</p>
+    </div>
+    <div class="team-grid__member">
+      <img src="assets/Lara W.jpg" alt="Lara W." />
+      <p class="team-grid__name">Lara W.</p>
+      <p class="team-grid__role">Design, Website</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="WDC" class="two-col">
+
+    <div class="media">
+    <img src="assets/WDC_Gruppenbild.jpg" alt="WDC Gruppenbild" class="bg">
+    <img src="assets/WDCBalken.JPEG"        alt="WDC Balken"    class="overlay">
+
+  </div>
+
+  <div class="text">
+    <h2>Wir sind Teil der WDC</h2>
+    <p>
+      <strong>World Design Capital Frankfurt RheinMain 2026</strong><br><br>
+      Unter dem Leitmotiv „Design for Democracy. Atmospheres for a better life“ 
+      engagieren wir uns gemeinsam mit der Region für eine lebenswerte, nachhaltige und demokratisch gestaltete Zukunft.<br><br>
+      Als Teil der WDC 2026 bringen wir Ideen, Projekte und Menschen zusammen, um mit Design neue Perspektiven für unsere Gesellschaft zu schaffen.
+    </p>
+  </div>
+
+</section>
+
+
+
+  <!-- Footer bleibt unverändert -->
+ <footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; WiConnect – Hochschule RheinMain</p>
+    
+    <div class="footer-links">
+      <a href="https://www.instagram.com/wiconnect.project/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wdc2026.org/en" target="_blank" rel="noopener">World Design Capital 2026</a>
+    </div>
+
+    <div class="footer-legal">
+      <a href="impressum.html">Impressum</a>
+    
+    </div>
+  </div>
+</footer>
+  <!-- Scripts (Leaflet & JS) -->
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('nav-links');
+
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+ 
+</html>
