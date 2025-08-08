@@ -1262,3 +1262,26 @@ body {
 
   padding-left: 0;
 }
+
+/* 1. Navbar-Höhe festlegen und Inhalt mittig ausrichten */
+.navbar {
+  display: flex;
+  align-items: center;      /* vertikal zentrieren */
+  justify-content: space-between;
+  height: clamp(3rem, 8vh, 6rem);
+  padding: 0 clamp(2rem, 5vw, 4rem);
+}
+
+/* 2. Logo-Container auf Höhe der Navbar begrenzen */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* 3. Logo-Bild relativ zur Navbar-Höhe skalieren */
+.nav-logo img {
+  max-height: 80%;          /* 80 % der Navbar-Höhe */
+  width: auto;              /* Seitenverhältnis beibehalten */
+  display: block;
+}
